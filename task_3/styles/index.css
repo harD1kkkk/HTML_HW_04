@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+.pricing-card {
+    width: 240px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0.5rem 0.5rem 0.5rem grey;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.5s;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.pricing-card__header {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.pricing-card__line {
+    height: 4px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.pricing-card__price-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.pricing-card__price-text {
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.pricing-card__content p {
+    margin-bottom: 8px;
+}
+
+/* Card Themes */
+.red-theme .pricing-card__line {
+    background-color: #FF6F61;
+}
+
+.blue-theme .pricing-card__line {
+    background-color: #6E7EBB;
+}
+
+.green-theme .pricing-card__line {
+    background-color: #82B366;
+}
+
+.orange-theme .pricing-card__line {
+    background-color: #FFA500;
+}
+
+/* Button Styles */
+.button {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    transition: 0.4s;
+    display: inline-block;
+}
+
+.red-theme .button {
+    background-color: #FF6F61;
+}
+
+.blue-theme .button {
+    background-color: #6E7EBB;
+}
+
+.green-theme .button {
+    background-color: #82B366;
+}
+
+.orange-theme .button {
+    background-color: #FFA500;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+  }
+
+.button:hover {
+    transform: scale(1.1);
+}
